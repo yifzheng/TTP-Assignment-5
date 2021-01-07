@@ -79,15 +79,29 @@
 .dropdown:hover .dropdown-content {
     display: block;
   }
-#black{
-    background-color: black;
+#orange{
+  background-color:orange;
+  display:block;
+  padding: 8px 15px;
+
 }
 #red{
-    background-color: red;
+  background-color: red;
+  display:block;
+  padding: 8px 15px;
 }
 #blue{
-    background-color: blue;
+  background-color: blue;
+  display:block;
+  padding: 8px 15px;
 }
 #green{
   background-color: green;
+  display:block;
+  padding: 8px 15px;
+}
+#selectBar{
+  padding: 10px 25px;
+  background-color: none;
+  color: black;
 }
