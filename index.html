@@ -6,8 +6,26 @@
         <title>Assignment 5: DOM Challenges III</title>
         <script src="addRow.js" asynx></script>
         <link rel="stylesheet" href="main.css">
+        <link rel ="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="navbar">
+            <button class = "btnAdd">Add Row</button>
+            <button class = "btnRemove">Delete Row</button>
+            <button class = "btnAdd">Add Column</button>
+            <button class = "btnRemove">Delete Column</button>
+            <div class="dropdown">
+                <button class = "btnColor">Color</button>
+                <div class="dropdown-content">
+                  <a href="" id = "black">black</a>
+                  <a href="" id ="red">red</a>
+                  <a href="" id ="blue">blue</a>
+                  <a href="" id = "green">green</a>
+                </div>
+              </div>
+            <button class = "btnColor" id = "btnFill">Fill All</button>
+            <button class = "btnClear">Clear all</button>  
+        </div>
         <button onclick="addRow()">Create Row</button>
         <button onclick="addColumn()" float = "left">Create Column</button>
         <table id="grid"></table>
