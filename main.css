@@ -1,0 +1,9 @@
+#grid {
+    margin: 5px;
+}
+
+#grid, .grid-row, .grid-cell {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
