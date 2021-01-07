@@ -1,6 +1,6 @@
 let col = 1;
 let row = 0;
-let currentColor = "white";
+let currentColor = "azure";
 let borderColor = "black";
 
 // function to change color
@@ -8,6 +8,7 @@ function changeColor() {
     this.style.backgroundColor = currentColor;
     this.classList.remove("uncolored");
 }
+
 // create()  cell function
 function create() {
     let cell = document.createElement("td");
