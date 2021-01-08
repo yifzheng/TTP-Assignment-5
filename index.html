@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Assignment 5: DOM Challenges III</title>
-        <script src="add.js" async></script>
-        <script src="remove.js" async></script>
-        <script src= "color.js" async></script>
-        <script src="clear.js" async></script>
 
-        <link rel="stylesheet" href="main.css">
-        <link rel ="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="navbar">
-            <button onclick = "addRow()" class = "btnAdd">Add Row</button>
-            <button onclick = "removeRow()" class = "btnRemove">Delete Row</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5: DOM Challenges III</title>
+    <script src="add.js" async></script>
+    <script src="remove.js" async></script>
+    <script src="color.js" async></script>
+    <script src="clear.js" async></script>
 
-            <button onclick="addColumn()" float = "left" class = "btnAdd">Add Column</button>
-            <button onclick = "removeColumn()" class = "btnRemove">Delete Column</button>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <div class="dropdown">
-                <button class = "btnColor">Color</button>
-                <div class="dropdown-content">
-                    <select onchange ="selectColor()" id = "selectBar">
-                        <option value = "orange" id = "orange">orange</a>
-                        <option  value = "red" id = "red">red</a>
-                        <option  value = "blue" id = "blue">blue</a>
-                        <option  value = "green" id = "green">green</a>
-                    </select>
-                    
-                </div>
-              </div>
-            <button class = "btnColor" id = "btnFill">Fill All</button>
-            <button class = "btnClear" onclick = "clearAll()">Clear all</button>  
+<body>
+    <div class="navbar">
+        <button onclick="addRow()" class="btnAdd">Add Row</button>
+        <button onclick="removeRow()" class="btnRemove">Delete Row</button>
+
+        <button onclick="addColumn()" float="left" class="btnAdd">Add Column</button>
+        <button onclick="removeColumn()" class="btnRemove">Delete Column</button>
+
+        <div class="dropdown">
+            <button class="btnColor">Color</button>
+            <div class="dropdown-content">
+                <option value="orange" id="orange" onclick="currentColor = 'orange'">orange</option>
+                <option value="red" id="red" onclick="currentColor = 'red'">red</option>
+                <option value="blue" id="blue" onclick="currentColor = 'blue'">blue</option>
+                <option value="green" id="green" onclick="currentColor = 'green'">green</option>
+            </div>
         </div>
-        <table id="grid"></table>
-    </body>
+        <button class="btnColor" id="btnFill" onclick="fillAll()">Fill All</button>
+        <button class="btnClear" onclick="clearAll()">Clear all</button>
+    </div>
+    <table id="grid"></table>
+</body>
+
 </html>
