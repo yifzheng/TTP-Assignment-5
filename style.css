@@ -113,6 +113,11 @@
   display:block;
   padding: 8px 15px;
 }
+#white{
+  background-color: white;
+  display:block;
+  padding: 8px 15px;
+}
 #selectBar{
   padding: 10px 25px;
   background-color: none;

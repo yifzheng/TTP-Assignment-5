@@ -1,7 +1,6 @@
 function selectColor(color) {
     currentColor = color;
 }
-
 function fillAll() {
     let cells = document.getElementsByClassName("grid-cell");
     let arr = Array.from(cells);
@@ -23,7 +22,6 @@ function fillRest(){
         }
     });
 }
-
 function changeOrange(){
     currentColor = "orange";
     let element = document.getElementById("btn");

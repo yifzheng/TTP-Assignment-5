@@ -13,15 +13,17 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
 </head>
+    <body>
+        <div class="navbar">
+            <button onclick = "addRow()" class = "btnAdd">Add Row</button>
+            <button onclick = "removeRow()" class = "btnRemove">Delete Row</button>
 
 <body>
     <div class="navbar">
         <button onclick="addRow()" class="btnAdd">Add Row</button>
         <button onclick="removeRow()" class="btnRemove">Delete Row</button>
-
         <button onclick="addColumn()" float="left" class="btnAdd">Add Column</button>
         <button onclick="removeColumn()" class="btnRemove">Delete Column</button>
-
         <div class="dropdown">
             <button id = "btn" class="btnColor">Color</button>
             <div class="dropdown-content">
