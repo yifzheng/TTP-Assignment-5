@@ -1,6 +1,7 @@
-#grid {
-    margin: 5px;
-    
+body{
+    margin: 0px;
+    padding: 0;
+    background-color: lightslategrey;
 }
 
 #grid, .grid-row, .grid-cell {
@@ -8,4 +9,9 @@
     border-collapse: collapse;
     padding: 30px;
     /*background-color: none;*/
+}
+.navbar{
+    position: relative;
+    background-color: darkslategrey;
+    width: 100%;
 }

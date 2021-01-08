@@ -22,6 +22,11 @@ function fillRest(){
         }
     });
 }
+function changeAzure(){
+    currentColor = "azure";
+    let element = document.getElementById("btn");
+    element.style.backgroundColor = 'azure';
+}
 function changeOrange(){
     currentColor = "orange";
     let element = document.getElementById("btn");
