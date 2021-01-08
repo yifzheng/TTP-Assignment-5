@@ -1,4 +1,4 @@
-TTp Residency Assignment 5: DOM Challenges III
+TTP Residency Assignment 5: DOM Challenges III
 
 As a user, I can:
   add rows to the grid
