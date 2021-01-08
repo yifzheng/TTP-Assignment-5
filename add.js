@@ -14,7 +14,7 @@ function create() {
     let cell = document.createElement("td");
     cell.classList.add("grid-cell");
     cell.classList.add("uncolored");
-    cell.addEventListener("click", changeColor);
+    cell.addEventListener("mousedown", changeColor);
     return cell;
 }
 
