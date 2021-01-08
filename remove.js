@@ -1,4 +1,4 @@
-// remove rows
+// remove rows 1 by 1
 function removeRow(){
     if (row === 1){
         while (col > -1){
@@ -10,6 +10,8 @@ function removeRow(){
     let finalRow = table.rows.length - 1;
     table.deleteRow(finalRow);
 }
+
+// removes columns 1 by 1
 function removeColumn(){
     if (col === 1){
         while (row > -1){
