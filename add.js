@@ -2,19 +2,30 @@ let col = 1;
 let row = 0;
 let currentColor = "azure";
 let borderColor = "black";
-
+let color = false;
 // function to change color
-function changeColor() {
+/* function changeColor() {
     this.style.backgroundColor = currentColor;
     this.classList.remove("uncolored");
-}
+} */
 
 // create()  cell function
 function create() {
     let cell = document.createElement("td");
     cell.classList.add("grid-cell");
     cell.classList.add("uncolored");
-    cell.addEventListener("mousedown", changeColor);
+    cell.addEventListener("mousedown", e => color = true);
+    cell.addEventListener("mousemove", e => {
+        if (color) {
+            cell.style.backgroundColor = currentColor;
+            cell.classList.remove("uncolored");
+        }
+    });
+    cell.addEventListener("mouseup", e => {
+        if (color) {
+            color = false;
+        }
+    })
     return cell;
 }
 

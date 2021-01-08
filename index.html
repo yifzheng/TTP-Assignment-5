@@ -23,15 +23,16 @@
         <button onclick="removeColumn()" class="btnRemove">Delete Column</button>
 
         <div class="dropdown">
-            <button class="btnColor">Color</button>
+            <button id = "btn" class="btnColor">Color</button>
             <div class="dropdown-content">
-                <option value="orange" id="orange" onclick="currentColor = 'orange'">orange</option>
-                <option value="red" id="red" onclick="currentColor = 'red'">red</option>
-                <option value="blue" id="blue" onclick="currentColor = 'blue'">blue</option>
-                <option value="green" id="green" onclick="currentColor = 'green'">green</option>
+                <option value="orange" id="orange"  onclick="changeOrange()">orange</option>
+                <option value="red" id="red" onclick="changeRed()">red</option>
+                <option value="blue" id="blue" onclick="changeBlue()">blue</option>
+                <option value="green" id="green" onclick="changeGreen()">green</option>
             </div>
         </div>
         <button class="btnColor" id="btnFill" onclick="fillAll()">Fill All</button>
+        <button class="btnColor2" id="btnFill2" onclick="fillRest()">Fill Rest</button>
         <button class="btnClear" onclick="clearAll()">Clear all</button>
     </div>
     <table id="grid"></table>
