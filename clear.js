@@ -1,3 +1,4 @@
+// function to clear all background color
 function clearAll(){
     let cells = document.getElementsByClassName("grid-cell");
     let arr = Array.from(cells);
