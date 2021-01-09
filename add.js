@@ -14,6 +14,10 @@ function create() {
     let cell = document.createElement("td");
     cell.classList.add("grid-cell");
     cell.classList.add("uncolored");
+    cell.addEventListener("click", e => {
+        cell.style.backgroundColor = currentColor;
+        cell.classList.remove("uncolored");
+    });
     cell.addEventListener("mousedown", e => color = true);
     cell.addEventListener("mousemove", e => {
         if (color) {
